@@ -25,7 +25,6 @@ fetch(apiUrl)
     const precipitationRate = observation.metric.precipRate;
     const precipitationTotal = observation.metric.precipTotal;
     const uvIndex = observation.uv;
-    const uvRisk = observation.uv_risk;
     const solarRadiation = observation.solarRadiation;
     const feelsLike = observation.metric.heatIndex;
 
@@ -41,7 +40,6 @@ fetch(apiUrl)
       <p>Precipitation Rate: ${precipitationRate} mm/hr</p>
       <p>Precipitation Total: ${precipitationTotal} mm</p>
       <p>UV Index: ${uvIndex}</p>
-      <p>UV Risk: ${uvRisk}</p>
       <p>Solar Radiation: ${solarRadiation} W/m²</p>
       <p>Feels Like: ${feelsLike}°C</p>
     `;
