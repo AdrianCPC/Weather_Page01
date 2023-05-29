@@ -32,6 +32,7 @@ fetch(apiUrl)
     const weatherInfo = document.getElementById('weather-info');
     weatherInfo.innerHTML = `
       <p>Temperature: ${temperature}°C</p>
+      <p>Feels Like: ${feelsLike}°C</p>
       <p>Humidity: ${humidity}%</p>
       <p>Wind Speed: ${windSpeed} km/h</p>
       <p>Wind Direction: ${windDirectionCardinal}</p>
@@ -41,7 +42,7 @@ fetch(apiUrl)
       <p>Precipitation Total: ${precipitationTotal} mm</p>
       <p>UV Index: ${uvIndex}</p>
       <p>Solar Radiation: ${solarRadiation} W/m²</p>
-      <p>Feels Like: ${feelsLike}°C</p>
+
     `;
   })
   .catch(error => {
