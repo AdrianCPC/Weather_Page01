@@ -2,17 +2,20 @@ body {
   font-family: Arial, sans-serif;
   margin: 0;
   padding: 0;
+  background-color: #f5f5f5;
 }
 
 .container {
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  height: 100vh;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  padding: 20px;
 }
 
 h1 {
+  width: 100%;
+  text-align: center;
+  color: #333;
   margin-bottom: 20px;
 }
 
@@ -20,13 +23,14 @@ h1 {
 /* Reorganizando con paneles de informacion*/
 
 .panel {
-  background-color: #f1f1f1;
+  background-color: #fff;
   border-radius: 10%;
-  padding: 10px;
-  margin-bottom: 10px;
+  box-shadow: 0px 0px 10px rgba(0,0,0,0.1);
+  margin: 10px;
+  padding: 20px;
   text-align: center;
-  width: 300px;
-  height: 40px;
+  width: calc(100%/3 - 40px);
+  box-sizing: border-box;
 }
 
 .panel-header {
