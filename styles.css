@@ -34,10 +34,23 @@ h1 {
 }
 
 .panel-header {
-  font-weight: bold;
+  font-size: 1.2em;
+  color: #666;
   margin-bottom: 10px;
 }
 
 .panel-content {
+  font-size: 1.4em;
+  color: #333;
   line-height: 1.4;
+}
+
+@keyframes fadeIn {
+  0% {opacity: 0;}
+  100% {opacity: 1;}
+}
+
+.panel {
+  animation-name: fadeIn;
+  animation-duration: 2000ms;
 }
